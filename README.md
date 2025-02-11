@@ -8,4 +8,5 @@ Our Goals:
 * Determine the Classifiers we are going to use and decide which one has a higher accuracy.
 * Comparing undersampling and oversampling which is to be preferred.
 
-The main objective is to find handle the imbalance dataset and choose the right machine learning algorithm.
+Random Undersampling is covered, one can calculate the accuracy after removing the outliers after oversampling and compare the models.
+The main objective is to find handle the imbalance dataset.
