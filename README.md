@@ -1,7 +1,7 @@
 # Dealing-With-Imbalanced-Dataset
 
 Here we will be dealing with Credit Fraud dataset, here we will use various predictive models to see how accurate they are in detecting whether a transaction is a normal payment or a fraud. 
-The main objective is to find handle the imbalance dataset.
+The main objective is to find handle the imbalance dataset. Though this can be easily handled by Ensemble methods like Random Forest, XGBoost etc.
 
 Our Goals:
 *  Understand the distribution of data that was provided.
