@@ -1,20 +1,25 @@
-# Dealing-With-Imbalanced-Dataset
+# Dealing with Imbalanced Dataset
 
-Here we will be dealing with Credit Fraud dataset, here we will use various predictive models to see how accurate they are in detecting whether a transaction is a normal payment or a fraud. 
-The main objective is to find handle the imbalance dataset. Though this can be easily handled by Ensemble methods like Random Forest, XGBoost etc.
+## Overview
+In this project, we analyze the **Credit Fraud dataset** and utilize various predictive models to determine the accuracy of detecting fraudulent transactions. The primary challenge is handling the **imbalanced dataset**, where fraudulent transactions are significantly fewer than normal transactions. We explore techniques such as **undersampling, oversampling, and ensemble methods** (e.g., Random Forest, XGBoost) to address this issue effectively.
 
-Our Goals:
-*  Understand the distribution of data that was provided.
-* Create a 50/50 sub-dataframe ratio of "Fraud" and "Non-Fraud" transactions.
-* Determine the Classifiers we are going to use and decide which one has a higher accuracy.
-* Comparing undersampling and oversampling which is to be preferred.
+## Goals
+1. **Understand the Data Distribution**: Analyze the dataset to comprehend the imbalance and structure of fraud vs. non-fraud transactions.
+2. **Create a Balanced Subset**: Generate a 50/50 sub-dataframe of fraudulent and non-fraudulent transactions.
+3. **Evaluate Classifiers**: Compare multiple classification algorithms and determine which yields the highest accuracy.
+4. **Assess Sampling Techniques**: Investigate the impact of **undersampling and oversampling** to determine the best approach.
 
-Learnings:
-*  We want to focus more on "extreme outliers" rather than just outliers. Why? because we might run the risk of information loss which will cause our models to have a lower accuracy.
-*  Undersampling to be perform while Cross Validation, not before that cause the same minority-class samples might end up in both the training and test sets or after cross-validating different folds may have different distributions, making the model learn from inconsistent patterns.
-*  In our undersample data our model is unable to detect for a large number of cases non fraud transactions correctly and instead, misclassifies those non fraud transactions as fraud cases.
+---
 
-Random Undersampling is covered, one can calculate the accuracy after removing the outliers after oversampling and compare it with test set.
+## Learnings & Key Insights
+- **Focus on Extreme Outliers**: Rather than removing all outliers, we emphasize extreme outliers to prevent information loss that could degrade model performance.
+- **Perform Undersampling During Cross-Validation**: Conducting undersampling before cross-validation may lead to inconsistencies, as the same minority-class samples could appear in both training and test sets, leading to misleading results.
+- **Limitations of Undersampling**: In our undersampled dataset, models often misclassify non-fraudulent transactions as fraudulent cases, which can reduce reliability in real-world scenarios.
+- **Random Undersampling Considerations**: After oversampling, removing outliers can impact model performance; therefore, it is crucial to compare results with the test set to ensure effectiveness.
 
+---
 
-The main thing is to see if our models are able to correctly classify no fraud and fraud transactions.
+## Conclusion
+The main objective is to ensure our models **accurately classify both fraudulent and non-fraudulent transactions** while mitigating the challenges of an imbalanced dataset. By leveraging **sampling techniques and ensemble models**, we aim to improve detection rates while minimizing false positives and false negatives. Further optimizations and advanced techniques can enhance predictive performance in real-world fraud detection applications.
+
+Feel free to contribute or suggest improvements!
